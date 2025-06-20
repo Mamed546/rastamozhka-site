@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" stroke="#b20000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+
+  <!-- головка ключа (чип-брелок) -->
+  <rect x="8" y="10" width="28" height="18" rx="4" ry="4"></rect>
+  <!-- «кнопка» на брелоке -->
+  <circle cx="22" cy="19" r="4"></circle>
+
+  <!-- стержень -->
+  <path d="
+        M36 19
+        l18 0
+        c2 0 4 2 4 4
+        l0 10
+        c0 2 -2 4 -4 4
+        l-18 0
+        "></path>
+
+  <!-- зубцы -->
+  <path d="
+        M54 23
+        l4 4 -4 4
+        M46 23
+        l4 4 -4 4
+        "></path>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" stroke="#b20000" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- clipboard -->
+  <rect x="14" y="10" width="36" height="48" rx="4" ry="4"></rect>
+  <path d="M24 10V6h16v4"></path>
+  <!-- car (схематично) -->
+  <rect x="20" y="34" width="24" height="10" rx="2"></rect>
+  <path d="M18 44h28"></path>
+  <circle cx="26" cy="50" r="4"></circle>
+  <circle cx="38" cy="50" r="4"></circle>
+</svg>

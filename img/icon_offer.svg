@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" stroke="#b20000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+
+  <!-- лист бумаги -->
+  <rect x="8" y="8" width="28" height="36" rx="2" ry="2"></rect>
+  <!-- знак процента -->
+  <circle cx="22" cy="20" r="4"></circle>
+  <circle cx="22" cy="32" r="4"></circle>
+  <path d="M18 24 l8 4"></path>
+  <!-- маленькая машина-иконка снизу -->
+  <rect x="14" y="40" width="16" height="6" rx="2"></rect>
+  <circle cx="18" cy="48" r="3"></circle>
+  <circle cx="26" cy="48" r="3"></circle>
+</svg>

@@ -1,0 +1,52 @@
+/* ===== Hero блок ===== */
+.hero{
+    min-height:100vh;
+    background:url("../img/авторынок.jpg") center/cover no-repeat fixed;
+    position:relative;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+/* —–– белый текст на фоне hero —–– */
+.hero h1,
+.hero p{
+    color:#fff;
+}
+
+/* === Центровка блока "Наши услуги" === */
+#services .services{
+    display:flex;
+    flex-wrap:wrap;
+    gap:22px;
+    justify-content:center; /* центрирование */
+}
+#services .service-card{
+    max-width:280px;
+    flex:1 1 240px;
+    text-align:center;
+    border:1px solid #e5e5e5;
+    padding:20px 18px;
+    border-radius:12px;
+    background:#ffffff;
+}
+#services .service-card img{margin-bottom:10px;}
+
+/* ===== Кейсы ===== */
+.case-box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:.5rem;
+}
+
+/* ===== Сглаженная прокрутка ===== */
+html{scroll-behavior:smooth;}
+
