@@ -304,8 +304,40 @@
   © 2025&nbsp;«Растоможка авто•Брокер Волгоград», Волгоград
 </footer>
 
-<!-- Bootstrap Bundle (JS + Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ===== AJAX-обработка формы ===== -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form     = document.getElementById('contact-form');
+    const thankyou = document.getElementById('thankyou');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();                       // без перезагрузки
+      const data = new FormData(form);
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body:   data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {                           // успех!
+          form.classList.add('d-none');         // прячем форму
+          thankyou.classList.remove('d-none');  // показываем блок «Спасибо»
+          form.reset();
+        } else {
+          alert('Не удалось отправить. Попробуйте позже.');
+        }
+      } catch {
+        alert('Сеть недоступна. Попробуйте позже.');
+      }
+    });
+  });
+  </script>
+
+  <!-- Bootstrap Bundle (JS + Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
